@@ -1,0 +1,29 @@
+
+.overlayMenu.notifPizza {
+    left: auto;
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+.overlayMenu.notifPizza .descriptions-box {
+    opacity: 0;
+}
+
+.overlayMenu.notifPizza .options button {
+    position: relative;
+}
+
+.nextValue {
+    animation: slideOut 1s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+}

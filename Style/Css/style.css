@@ -1,0 +1,29 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+canvas {
+  outline: 1px solid #fff;
+  margin: 0 auto;
+}
+
+.game-container {
+  position: relative;
+  width: 352px;
+  height: 198px;
+  margin: 0 auto;
+  -webkit-transform: scale(3) translateY(40%);
+          transform: scale(3) translateY(40%);
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+}
+/*# sourceMappingURL=style.css.map */

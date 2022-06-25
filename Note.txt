@@ -1,0 +1,74 @@
+
+Objectif de création du jeu :
+- Optimisation principal objectif + usage du devTools
+- Code maintenable et perein ++
+
+C'est quoi le jeu enft:
+- Un rpg pokemon like 
+
+
+Code Plan Déplacement:
+
+Créer une "file" avec toute les intruction du joueur 
+a x nb d'instruction dans la file  -> accélère la vistesse du perso c'est a dire réduire le frameToMove
+Repenser le system de déplacement avec idle, walk and run sate
+Repenser le systeme d'animation:
+    - 1 case = 1 animation
+    - modifier l'anim correctement lors de changement de direction
+        - Le pb acutelle lors 4 anim = 1 case les changement direction sont ingerable enft
+
+Bug Walls cutscne walk Png
+    Entre le reset du behavior et le resolve du overworldEvent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe
+arabearabearabearabearabearabearabearabearabearabearabearabe

@@ -1,0 +1,151 @@
+
+
+.combatant {
+    position: absolute;
+    width: 67px;
+    height: 14px;
+    background: url("/images/ui/combatant-plate.png") no-repeat no-repeat;
+}
+
+.battle .combatant {
+    transform: scale(2);
+    transition: opacity 0.4s;
+}
+
+.battle .combatant[data-active="false"] {
+    opacity: 0;
+}
+
+.battle .combatant[data-active="true"] {
+    opacity: 1;
+}
+.combatant[data-team="player"] {
+    left: 46px;
+    top: 70px;
+}
+
+.combatant[data-team="ennemy"] {
+    top:20px;
+    right: 77px;
+}
+
+
+.combatant-character-container {
+    position: absolute;
+    bottom: 1px;
+    left: 3px;
+    width: 22px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.combatant-character {
+    display: block;
+    position: absolute;
+    left: -11px;
+    bottom: -7px;
+}
+
+.battle .combatant-character-container {
+    display: none;
+}
+
+.combatant-name {
+    position: absolute;
+    left: -2px;
+    top: -8px;
+    white-space: nowrap;
+    background: var(--menu-font-color);
+    color: #fff;
+    font-size: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0;
+}
+
+.combatant-type {
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+}
+
+.combatant-life-container {
+    position: absolute;
+    left: 20px;
+    top: 4px;
+    width: 26px;
+    height: 3px;
+}
+
+.combatant-life-container > rect {
+    transition: width 0.2s; /* peut être changer en translate + perf */
+}
+
+.combatant-xp-container {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    width: 26px;
+    height: 2px;
+}
+
+.combatant-level {
+    position: absolute;
+    font-size: 12px;
+    right: 2px;
+    top: -1px;
+    width: 17px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8C594;
+    border: 1px solid #A48465;
+    margin: 0;
+}
+
+.combatant-status {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    font-size: 4px;
+    color: #fff;
+    gap: 5px;
+}
+
+.combatant-status > * {
+    background: var(--menu-font-color);
+    padding: 0 1.5px;    
+}
+
+
+.pizza {
+    position: absolute;
+    transform: scale(2);
+    background: url(/images/characters/pizzas/pizza-shadow.png) no-repeat no-repeat;
+    transition: transform 0.4s, opacity 0.4s
+}
+
+.pizza[data-team="player"] {
+    bottom: 65px;
+    left: 51px;
+}
+
+.pizza[data-team="ennemy"] {
+    top: 47px;
+    right: 100px;
+}
+
+.pizza[data-active="true"] {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(2)
+}
+
+.pizza[data-active="false"] {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) scale(2)
+}
