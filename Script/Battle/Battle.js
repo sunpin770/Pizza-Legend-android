@@ -49,11 +49,11 @@ class Battle {
         //Mettre les Perso
         this.element.innerHTML = (`
             <div class="battle-hero">
-                <img src="${'/images/characters/people/hero.png'}" alt="Hero" />
+                <img src="${'./images/characters/people/hero.png'}" alt="Hero" />
             </div>
 
             <div class="battle-ennemy">
-                <img src="${this.ennemy.src}" alt="Hero" />
+                <img src="./${this.ennemy.src}" alt="Ennemy" />
             </div>
         `)
     }
