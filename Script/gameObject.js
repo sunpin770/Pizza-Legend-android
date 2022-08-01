@@ -14,7 +14,7 @@ class GameObject {
         
         this.sprite = new Sprite({
             gameObject: this,
-            src: config.src || "",
+            src: `./${config.src}` || "",
             x: this.x,
             y: this.y,
             useShadow: config.useShadow || null
