@@ -4,7 +4,7 @@
     position: absolute;
     width: 67px;
     height: 14px;
-    background: url("/images/ui/combatant-plate.png") no-repeat no-repeat;
+    background: url("../../images/ui/combatant-plate.png") no-repeat no-repeat;
 }
 
 .battle .combatant {
@@ -126,7 +126,7 @@
 .pizza {
     position: absolute;
     transform: scale(2);
-    background: url(/images/characters/pizzas/pizza-shadow.png) no-repeat no-repeat;
+    background: url(../../images/characters/pizzas/pizza-shadow.png) no-repeat no-repeat;
     transition: transform 0.4s, opacity 0.4s
 }
 
