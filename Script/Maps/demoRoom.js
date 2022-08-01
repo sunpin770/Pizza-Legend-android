@@ -100,7 +100,7 @@ caseEvent: {
 },
 gameObject: {
     hero: new Player({
-        src: "../../images/characters/people/hero.png",
+        src: "images/characters/people/hero.png",
         x: withGrid(5),
         y: withGrid(7),
         useShadow: true,
@@ -148,7 +148,7 @@ gameObject: {
         ] 
     }),
     npc1: new Npc({
-        src:"../../images/characters/people/npc1.png",
+        src:"images/characters/people/npc1.png",
         x: withGrid(7),
         y: withGrid(3),
         name:"Truc",
