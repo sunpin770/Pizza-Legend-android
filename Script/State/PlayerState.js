@@ -11,7 +11,7 @@ class PlayerState {
         this.storyFlags = {}
         this.numberFlags = 0;
         this.moneyIcon = new IconSprite({
-            src: "/images/icons/Money Sprite.png"
+            src: "../../images/icons/Money Sprite.png"
         })
         this.money = 0
         

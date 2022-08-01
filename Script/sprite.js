@@ -11,7 +11,7 @@ class Sprite {
             this.shadow = new Image()
             this.shadow.src = "images/characters/shadow.png"
             this.shadow.onload = () => {
-                this.shadowLoaded = true
+                this.shadowLoaded = true   
             }
         }
 
