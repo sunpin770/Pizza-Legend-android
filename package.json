@@ -1,0 +1,22 @@
+{
+  "name": "pizza-local",
+  "version": "1.0.0",
+  "description": "",
+  "default": "./index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanis-Gerst/Pizza-Legend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanis-Gerst/Pizza-Legend/issues"
+  },
+  "homepage": "https://github.com/Yanis-Gerst/Pizza-Legend#readme"
+}

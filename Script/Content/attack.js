@@ -21,15 +21,6 @@ window.attack = {
             { type:"stateChange", damage: 10}
         ]
     },
-    meatBasic: {
-        name: "Emincé de Kebab",
-        power: 1,
-        typeAttack:"viande",
-        succes: [
-            {type:"textMessage", text: "{CASTER} utilise {ACTION}"}, 
-            { type:"stateChange", damage: 10}
-        ]
-    },
     veggieBasic: {
         name: "Graine de Soja",
         power: 1,

@@ -41,13 +41,13 @@ class GameObject {
     disappear(map) {
         this.isAppeared = false
         map.removeWalls(this.x, this.y)
-        //Innacesible
-        this.previousPosition = {
-            x: this.x,
-            y: this.y
-        }
-        this.x = withGrid(100)
-        this.y = withGrid(100)
+        // //Innacesible
+        // this.previousPosition = {
+        //     x: this.x,
+        //     y: this.y
+        // }
+        // this.x = withGrid(100)
+        // this.y = withGrid(100)
     }
     
     draw(ctx, cameraPerson) {
@@ -60,7 +60,7 @@ class GameObject {
         return behaviorLoop
     }
     async doBehaviorEvent(map) {
-        if (this.behaviorLoop.length === 0 || map.cutscenePlaying || this.isStanding || !this.isAppeared || this.isBehave)  {       
+        if (this.behaviorLoop.length === 0 || map.cutscenePlaying || this.isStanding || !this.isAppeared || this.isBehave )  {       
             return
         }
         this.isBehave = true

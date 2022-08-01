@@ -12,6 +12,7 @@ class Map {
         this.caseEvent = config.caseEvent || {}
         this.cutscenePlaying = false
         this.id = config.id
+
         
     }
 
@@ -65,6 +66,15 @@ class Map {
             object.id = key
             //System pour voir si l'object doit apparait ou pas ex: une clé qui est pickup
             object.appear(this)
+        })
+    }
+
+    disapearObject() {
+        Object.keys(this.gameObject).forEach(key => {
+            let object = this.gameObject[key]
+            object.id = key
+            //System pour voir si l'object doit apparait ou pas ex: une clé qui est pickup
+            object.disappear(this)
         })
     }
 

@@ -118,29 +118,29 @@ window.overworldMaps.streetNorth =  {
                 }
             ]
         },
-        //rentre Dans la Zone qu'une fois avoir battu les 4 npcs dans StreetLower
-        // [gridWall(7, 14)]: [
-        //     {
-        //         requires: ["FOURTH_WIN"],
-        //         event: []
-        //     },
-        //     {
-        //         requires: [],
-        //         event: [
-        //             {who:"npc15", type:"walk", direction:"down"},
-        //             {who:"npc15", type:"walk", direction:"down"},
-        //             {type:"textMessage", text:"Bats tous les Npcs d'en bat avec de venir ici"},
-        //             {who:"npc15", type:"stand", direction:"down", time: 1},
-        //             {who:"hero", type:"walk", direction:"down"},
-        //             {
-        //                 type:"changeMap", map:'streetLower',
-        //                 x: withGrid(25),
-        //                 y: withGrid(6),
-        //                 direction: "down"
-        //             },
-        //         ]
-        //     }
-        // ]
+
+        [gridWall(7, 14)]: [
+            {
+                requires: ["FOURTH_WIN"],
+                event: []
+            },
+            {
+                requires: [],
+                event: [
+                    {who:"npc15", type:"walk", direction:"down"},
+                    {who:"npc15", type:"walk", direction:"down"},
+                    {type:"textMessage", text:"Bats tous les Npcs d'en bat avec de venir ici"},
+                    {who:"npc15", type:"stand", direction:"down", time: 1},
+                    {who:"hero", type:"walk", direction:"down"},
+                    {
+                        type:"changeMap", map:'streetLower',
+                        x: withGrid(25),
+                        y: withGrid(6),
+                        direction: "down"
+                    },
+                ]
+            }
+        ]
     },
     walls: {
         //Mur en bas

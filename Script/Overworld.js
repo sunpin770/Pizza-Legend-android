@@ -69,6 +69,10 @@ class Overlord {
     }
 
     startMap(mapSrc,heroInitialState = null, overworld) {
+        let ancientMap;
+        if (this.map) {
+            ancientMap = this.map
+        }
         this.map = new Map(mapSrc, overworld)
         this.map.overworld = this
         const hero = this.map.gameObject.hero
@@ -79,9 +83,9 @@ class Overlord {
             hero.direction = heroInitialState.direction
             this.map.addWalls(hero.x, hero.y)  
         }
+        ancientMap?.disapearObject()
         setTimeout(() => {
             this.map.appearObject()
-
         }, 10)
 
         this.progress.mapId = mapSrc.id

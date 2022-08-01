@@ -2,8 +2,8 @@
 window.overworldMaps.demoRoom = 
 {
 id:"demoRoom",
-upperSrc: "images/maps/DemoUpper.png",
-lowerSrc: "images/maps/DemoLower.png",
+upperSrc: "../../images/maps/DemoUpper.png",
+lowerSrc: "../../images/maps/DemoLower.png",
 walls: {
 
     //Mur Mileu
@@ -60,7 +60,7 @@ walls: {
 caseEvent: {
     [gridWall(7, 4)]: [
         {
-            requires: [],
+            requires: ["DEFEATED_GREEN_BOSS"],
             event: [
                 {
                     type:"changeMap", map: "diningRoom",
@@ -71,31 +71,42 @@ caseEvent: {
             ]
         },
         {
+            requires:[],
             event: [
-                {type: "textMessage", text:"No Requires"}      
+                {type: "textMessage", text:"Frérot faut battre le boss qui se situe au nord de la ville."},      
+                {type: "textMessage", text:"Après tu pourras dahack avec Mme.Guillaud."}  
             ]
         }
     ],
-    [gridWall(5, 10)]: {
-        event: [
-            { 
-                type:"changeMap", map:'streetLower',
-                x: withGrid(5),
-                y: withGrid(10),
-                direction: "down"
-            }
-        ]
-    },
+    [gridWall(5, 10)]: [
+        {
+            requires:["GET_FIRST_PIZZA"],
+            event: [
+                { 
+                    type:"changeMap", map:'streetLower',
+                    x: withGrid(5),
+                    y: withGrid(10),
+                    direction: "down"
+                }
+            ]
+        },
+        {
+            requires: [],
+            event: [
+                {type:"textMessage", text:"Frérot faut que tu prennes ta pizza enfaite"}
+            ]
+        }
+    ]
 },
 gameObject: {
     hero: new Player({
-        src: "/images/characters/people/hero.png",
+        src: "../../images/characters/people/hero.png",
         x: withGrid(5),
         y: withGrid(7),
         useShadow: true,
     }),
     npc2: new Npc({
-        src:"/images/characters/people/npc2.png",
+        src:"../../images/characters/people/npc2.png",
         x: withGrid(2),
         y: withGrid(8),
         name:"Black Mister V",
@@ -137,7 +148,7 @@ gameObject: {
         ] 
     }),
     npc1: new Npc({
-        src:"/images/characters/people/npc1.png",
+        src:"../../images/characters/people/npc1.png",
         x: withGrid(7),
         y: withGrid(3),
         name:"Truc",

@@ -1,3 +1,5 @@
+
+
 window.ennemies = {
     "npc2": {
         name: "Richard",
