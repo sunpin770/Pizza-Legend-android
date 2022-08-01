@@ -1,7 +1,7 @@
 class IconSprite {
     constructor(config) {
         this.image = new Image()
-        this.image.src = config.src
+        this.image.src = `./${config.src}`
         this.image.onload = () => {
             this.imageLoaded = true
         }

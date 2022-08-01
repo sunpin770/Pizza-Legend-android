@@ -1,0 +1,64 @@
+.keyboard-menu {
+  border: 1px solid var(--border-color);
+  background-color: var(--menu-background);
+  position: absolute;
+}
+
+.keyboard-menu button {
+  width: 100%;
+  text-align: left;
+  -webkit-appearance: none;
+  height: 20px;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  align-items: center;
+  padding: 0 0 0 1em;
+  font-family: inherit;
+  font-size: 10px;
+  display: flex;
+}
+
+.keyboard-menu button:focus {
+  background-color: var(--menu-selected-background);
+  outline: 0;
+}
+
+.keyboard-menu .options {
+  position: relative;
+}
+
+.keyboard-menu .options .right-side {
+  align-items: center;
+  margin-left: auto;
+  padding-right: 3px;
+  font-size: 10px;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.descriptions-box {
+  color: var(--border-color);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--menu-background);
+  padding: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.descriptions-box p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.battle .keyboard-menu {
+  width: 140px;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=index.2e53fc01.css.map */

@@ -3,9 +3,9 @@ class Map {
     constructor(config, overworld) {
         
         this.upperImage = new Image()
-        this.upperImage.src = config.upperSrc || ""
+        this.upperImage.src = `./${config.upperSrc}` || ""
         this.lowerImage = new Image()
-        this.lowerImage.src = config.lowerSrc || ""
+        this.lowerImage.src = `./${config.lowerSrc}` || ""
         this.overworld = overworld;
         this.walls = config.walls || {}
         this.gameObject = config.gameObject

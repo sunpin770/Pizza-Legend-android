@@ -4,7 +4,7 @@ class PizzaStone extends GameObject {
 
         this.sprite = new Sprite({
             gameObject: this,
-            src:"/images/characters/pizza-stone.png",
+            src:"./images/characters/pizza-stone.png",
             animation: {
 
                 "used-down" : [[0,0]],

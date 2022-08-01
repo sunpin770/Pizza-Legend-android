@@ -2,8 +2,8 @@
 window.overworldMaps.demoRoom = 
 {
 id:"demoRoom",
-upperSrc: "../../images/maps/DemoUpper.png",
-lowerSrc: "../../images/maps/DemoLower.png",
+upperSrc: "images/maps/DemoUpper.png",
+lowerSrc: "images/maps/DemoLower.png",
 walls: {
 
     //Mur Mileu
@@ -106,7 +106,7 @@ gameObject: {
         useShadow: true,
     }),
     npc2: new Npc({
-        src:"../../images/characters/people/npc2.png",
+        src:"images/characters/people/npc2.png",
         x: withGrid(2),
         y: withGrid(8),
         name:"Black Mister V",
