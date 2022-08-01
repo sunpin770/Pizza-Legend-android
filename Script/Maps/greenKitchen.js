@@ -1,5 +1,6 @@
 window.overworldMaps.greenKitchen =  {
     id: "greenKitchen",
+    upperSrc: "images/maps/GreenKitchenUpper.png",
     lowerSrc: "images/maps/GreenKitchenLower.png",
     gameObject: {
         hero: new Player({
