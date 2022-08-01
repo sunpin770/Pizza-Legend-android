@@ -15,40 +15,40 @@ window.pizzas = {
         name: "Samourai Kebab",
         type: window.pizzaTypes.viande,
         descriptions: "Rapide et puissante, une icone des pays mahgrebien",
-        src:"/images/characters/pizzas/s001.png",
-        icon: 'images/icons/meat.png',
+        src:"./images/characters/pizzas/s001.png",
+        icon: './images/icons/meat.png',
         canGetActions: ["meatBasic", "basicBurn", "hotTime"]
     },
     "v001": {
         name: "La Vegana", 
         type: window.pizzaTypes.veggie,
         descriptions: "Sans gluten, qui respecte les animeaux",
-        src:"/images/characters/pizzas/v001.png",
-        icon: 'images/icons/veggie.png',
+        src:"./images/characters/pizzas/v001.png",
+        icon: './images/icons/veggie.png',
         canGetActions: ["veggieBasic", "basicRecoveryVeggie", "basicDefStatus"]
     },
     "c002": {
         name: "G.O.A.T",
         type: window.pizzaTypes.chesse,
         descriptions: "Le Chèvre",
-        src:"/images/characters/pizzas/c002.png",
-        icon: 'images/icons/cheese.png',
+        src:"./images/characters/pizzas/c002.png",
+        icon: './images/icons/cheese.png',
         canGetActions: ["cheeseBasic", "Poison", "buffAtkSpe"]
     },
     "c001": {
         name: "Blue Cheese",
         type: window.pizzaTypes.chesse,
         descriptions: "Fromage fort et puissant",
-        src:"/images/characters/pizzas/c001.png",
-        icon: 'images/icons/cheese.png',
+        src:"./images/characters/pizzas/c001.png",
+        icon: './images/icons/cheese.png',
         canGetActions: ["cheeseBasic", "basicDefSpeSatus", "buffAtkSpe"]
     },
     "f001": {
         name: "Mushy",
         type: window.pizzaTypes.fungi,
         descriptions: "Oula t'es un bizzare",
-        src:"/images/characters/pizzas/f001.png",
-        icon: 'images/icons/fungi.png',
+        src:"./images/characters/pizzas/f001.png",
+        icon: './images/icons/fungi.png',
         canGetActions: ["fungiBasic", "Poison", "buffAtkSpe"]
     }
     
