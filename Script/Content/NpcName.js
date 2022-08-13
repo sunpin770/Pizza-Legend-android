@@ -1,2 +1,2 @@
-
-const tutorName = "Pochi"
+const tutorName = "Mister V";
+const secondaryBoss = "Ari";

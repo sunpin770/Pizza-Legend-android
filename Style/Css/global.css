@@ -1,15 +1,15 @@
 :root {
-  --border-color: #291D4D;
-  --dialog-background: #FFF3B4;
+  --border-color: #291d4d;
+  --dialog-background: #fff3b4;
 
-  --menu-background: #FFE8D2;
-  --menu-border-color: #A48465;
-  --menu-font-color: #3A160D;
+  --menu-background: #ffe8d2;
+  --menu-border-color: #a48465;
+  --menu-font-color: #3a160d;
   --menu-selected-background: #7fc2ff;
 }
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,17 +17,16 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family:monospace;
+  font-family: monospace;
 }
 
 .game-container {
-  position: relative; 
+  position: relative;
   width: 352px;
   height: 198px;
   margin: 0 auto;
-  outline: 1px solid #fff;
 
-  transform: scale(3) translateY(50%);
+  transform: scale(3.5) translateY(50%);
 }
 
 .game-container canvas {
