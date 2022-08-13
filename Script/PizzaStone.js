@@ -18,12 +18,12 @@ class PizzaStone extends GameObject {
             {
                 requires: [this.storyFlag],
                 box: [
-                    { type:"textMessage", text:"Tu as déjà utiliser tu vois pas y'a plus de pizza" }
+                    { type:"textMessage", text:"..." }
                 ]
             },
             {
                 box: [
-                    { type:"textMessage", text:"Choisis une pizza" },
+                    { type:"textMessage", text:"Choose one Pizza." },
                     { type:"craftingMenu", pizzas: this.pizzas },
                     { type:"addStoryFlags", flag:`${this.storyFlag}`}
 

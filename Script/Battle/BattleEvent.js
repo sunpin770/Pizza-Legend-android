@@ -170,7 +170,7 @@ class BattleEvent {
                 onComplete: () => {
                     //Txt avec les dégats afficher
                     const textDamage = new TextMessage({
-                        text: `${target.name} a subit ${this.amountOfDamage} dégats`,
+                        text: `${target.name} take ${this.amountOfDamage} damage.`,
                         onComplete: () => {
                             resolve()
                         }
@@ -183,7 +183,7 @@ class BattleEvent {
         } else if (damage) {
             //nb Dmg
             const textMessage = new TextMessage({
-                text: `${target.name} a subit ${this.amountOfDamage} dégats`,
+                text: `${target.name} take ${this.amountOfDamage} damage.`,
                 onComplete: () => {
                     resolve()
                 }
@@ -192,7 +192,7 @@ class BattleEvent {
         } else if (specialDamage) {
             //nb Special Damage
             const feedBackTextMessage = new TextMessage({
-                text: `${caster.name} subit ${this.amountOfDamage} dégats`,
+                text: `${caster.name} take ${this.amountOfDamage} damage.`,
                 onComplete: () => {
                     resolve()
                 }
@@ -200,7 +200,7 @@ class BattleEvent {
             feedBackTextMessage.init(this.battle.element)
         } else if (recovery) {
             const feedBackTextMessage = new TextMessage({
-                text: `${caster.name} se soigne de ${this.amountOfHeal} Hp.`,
+                text: `${caster.name} heal ${this.amountOfHeal} amount of hp.`,
                 onComplete: () => {resolve()}
             })
             feedBackTextMessage.init(this.battle.element)

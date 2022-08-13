@@ -20,7 +20,7 @@ class CraftingMenu {
         })
         const backOptions = {
             label: "Back",
-            descriptions: "Retour en Arrière",
+            descriptions: "Go Back",
             handler: () => {
                 this.close(true)
             }

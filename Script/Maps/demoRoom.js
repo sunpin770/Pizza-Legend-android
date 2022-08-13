@@ -73,8 +73,7 @@ caseEvent: {
         {
             requires:[],
             event: [
-                {type: "textMessage", text:"Frérot faut battre le boss qui se situe au nord de la ville."},      
-                {type: "textMessage", text:"Après tu pourras dahack avec Mme.Guillaud."}  
+                {type: "textMessage", text:"This is close."},      
             ]
         }
     ],
@@ -93,7 +92,7 @@ caseEvent: {
         {
             requires: [],
             event: [
-                {type:"textMessage", text:"Frérot faut que tu prennes ta pizza enfaite"}
+                {type:"textMessage", text:"You need to unlock your first Pizza to leave this room."}
             ]
         }
     ]
@@ -109,7 +108,7 @@ gameObject: {
         src:"images/characters/people/npc2.png",
         x: withGrid(2),
         y: withGrid(8),
-        name:"Black Mister V",
+        name: tutorName,
         useShadow: true,
         behavior: [
             {
@@ -145,6 +144,12 @@ gameObject: {
                     { type:"textMessage", text:"Il se situe en tout en haut de la ville", who:"Mister V"},
                 ]
             },
+            {
+                requires: [],
+                box: [
+                    {type:"textMessage", text:"Choose your Pizza!", who: tutorName},
+                ]
+            }
         ] 
     }),
     npc1: new Npc({

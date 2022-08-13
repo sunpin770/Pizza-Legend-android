@@ -7,8 +7,7 @@ class CutsceneListener {
         if (this.map.id === "demoRoom" && flag === "GET_FIRST_PIZZA") {       
            document.addEventListener("endOfCutscene", () => {      
             this.map.startCutscene([
-                {type:"textMessage", text:`Premier pizza de récupérer`, who:"Mister V"},
-                {type:"textMessage", text:`Maintenant ton premier combat`, who:"Mister V"},
+                {type:"textMessage", text:`You get your First Pizza, it's time for your first fight.`, who: tutorName},
                 {type:"walk", direction:"down", who:"npc1"},
                 {type:"walk", direction:"down", who:"npc1"},
                 {type:"walk", direction:"left", who:"npc1"},

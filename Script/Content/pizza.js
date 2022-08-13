@@ -14,23 +14,23 @@ window.pizzas = {
     "s001": {
         name: "Samourai Kebab",
         type: window.pizzaTypes.viande,
-        descriptions: "Rapide et puissante, une icone des pays mahgrebien",
+        descriptions: "Fast and powerful, this is a great offensive options.",
         src:"./images/characters/pizzas/s001.png",
         icon: './images/icons/meat.png',
         canGetActions: ["meatBasic", "basicBurn", "hotTime"]
     },
     "v001": {
-        name: "La Vegana", 
+        name: "Vegan", 
         type: window.pizzaTypes.veggie,
-        descriptions: "Sans gluten, qui respecte les animeaux",
+        descriptions: "Lot of Hp and utilies spell, in an Rpg we call this a Tank.",
         src:"./images/characters/pizzas/v001.png",
         icon: './images/icons/veggie.png',
         canGetActions: ["veggieBasic", "basicRecoveryVeggie", "basicDefStatus"]
     },
     "c002": {
-        name: "G.O.A.T",
+        name: "The Goat",
         type: window.pizzaTypes.chesse,
-        descriptions: "Le Chèvre",
+        descriptions: "Relatively balance, an all-in-one.",
         src:"./images/characters/pizzas/c002.png",
         icon: './images/icons/cheese.png',
         canGetActions: ["cheeseBasic", "Poison", "buffAtkSpe"]

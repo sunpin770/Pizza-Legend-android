@@ -90,18 +90,17 @@ class PlayerState {
         map.gameObject.npc2.y = withGrid(10)
         map.gameObject.npc2.direction = "up"
         const event = [
-            // {type: "textMessage", text:"Dit-moi ton Pseudo ?", getPlayerName:true}, 
-            // {type: "textMessage", text:"Toi là"},
+            {type: "textMessage", text:"Tell me your name.", getPlayerName:true}, 
             {type:"walk", direction:"up", who:"npc2"},
             {type:"walk", direction:"up", who:"npc2"},
-            // {type: "textMessage", text:"__Intro-Cinématique__", who:"Mister V"},
-            // {type: "textMessage", text:"Pour l'instant j'ai pas de skin mais c'est black Mister V", who:"Mister V"},
-            // {type: "textMessage", text:"Comme tu sais on a tous les 2 une mission, le même objectif", who:"Mister V"},
-            // {type: "textMessage", text:"Pour l'accomplir je vais t'aider a fabriquer ta premier pizza", who:"Mister V"},
-            // {type: "textMessage", text:"Puis tu vas t'entrainer avec d'autre chef Pizza du coin", who:"Mister V"},
-            // {type: "textMessage", text:"Quand t'aura le niveau nécessaire on iras dans 7 pays différents pour imposer la vrai Pizza.", who:"Mister V"},
-            // {type: "textMessage", text:"Bon pour créer ta première pizza tu vas sur le truc à droite.", who:"Mister V"},
-            // {type: "textMessage", text:"C'est une pierre à pizza du futur avec ça tu peux faire une pizza de A à Z.", who:"Mister V"},
+            //Put Dialogue
+            {type:"textMessage", text:"Welcome to PizzaMania!", who:"??"},
+            {type:"textMessage", text:`I'm ${tutorName} a pizza Teacher.`, who:tutorName},
+            {type:"textMessage", text:"This world is similar to another world named 'Pokemon' but with Pizzas.", who: tutorName},
+            {type:"textMessage", text:"On the left, there is a Pizza Stone which is an item that can give you your first Pizza.", who: tutorName},
+            {type:"textMessage", text:"In this one you be able to select only one among 3 Pizzas. The 2 that are left can be unlocked soon.", who: tutorName},
+            // {type:"textMessage", text:"This world work with types, to win fight you need to have the right type of Pizza.", who:"??"},
+            {type:"textMessage", text:"Choose the right one!", who: tutorName},
             {type:"walk", direction:"left", who:"npc2"},
             {type:"walk", direction:"left", who:"npc2"},
             {type:"walk", direction:"left", who:"npc2"},

@@ -106,7 +106,7 @@ class ActionMenu {
 
         const backOptions = {
             label: "Back",
-            descriptions: "Revenir en arrière",
+            descriptions: "Go back",
             handler: () => {
                 this.keyboardMenu.setOptions( this.getPages().root)
             }
@@ -115,21 +115,21 @@ class ActionMenu {
             root: [
             {
                 label:"Attack",
-                descriptions:"Choisir une attaque",
+                descriptions:"Choose one Attack.",
                 handler: () => {
                     this.keyboardMenu.setOptions(this.getPages().attacks)
                 }
             },
             {
             label: "Items",
-            descriptions: "Choisir un Item",
+            descriptions: "Choose one Item.",
             handler: () => {
                     this.keyboardMenu.setOptions( this.getPages().items)
                 }
             },
             {
                 label: "Swap",
-                descriptions: "Changer de Pizza",
+                descriptions: "Switch for another Pizza.",
                 handler: () => {
                     this.keyboardMenu.setOptions(this.getPages().switch)
                 }

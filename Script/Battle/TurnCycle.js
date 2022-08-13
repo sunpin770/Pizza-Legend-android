@@ -198,7 +198,7 @@ class TurnCycle {
         }
         
         await this.onNewEvent({
-            type:"textMessage", text:`${who.name} est mort!!`
+            type:"textMessage", text:`${who.name} is K.O!!`
         })
 
         if (who === this.ennemy) {
@@ -206,7 +206,7 @@ class TurnCycle {
             const xp = who.givesXp
 
             await this.onNewEvent({
-                type:"textMessage", text:` ${alivePizza.name} a gagné ${xp} XP !`
+                type:"textMessage", text:` ${alivePizza.name} earn ${xp} XP !`
             })
 
             await this.onNewEvent({ 
@@ -221,7 +221,7 @@ class TurnCycle {
         if (winner) {
             await this.onNewEvent({
                 type:"textMessage",
-                text:`${winner === "player" ? playerState.name : this.battle.ennemy.name} a gagné`
+                text:`${winner === "player" ? playerState.name : this.battle.ennemy.name} have won!`
             })
             this.onWinner(winner)
             return "winner"
@@ -239,7 +239,7 @@ class TurnCycle {
 
         await this.onNewEvent({
             type:"textMessage",
-            text:`${replacer.name} veut dahack`
+            text:`${replacer.name} want to fight.`
         })
         const team = who.team
       
@@ -286,7 +286,7 @@ class TurnCycle {
     async init() {
         await this.onNewEvent({
             type: "textMessage",
-            text: "Ca veut dahack"
+            text: "Battle Time!"
         })
 
         this.turn()
