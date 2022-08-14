@@ -1,36 +1,36 @@
 
 window.items = {
     basicHealingItem: {
-        name: "Huile a Pizza",
-        descriptions: "Un peu comme une potions",
+        name: "Pizza Oil",
+        descriptions: "Restore a little amount of Hp",
         succes: [
-            {type:"textMessage", text: "{CASTER} utilise une {ACTION}"}, 
+            {type:"textMessage", text: "{CASTER} use a {ACTION}"}, 
             { type:"stateChange", recovery: 30},
         ]
     },
     superHealingItem: {
-        name: "Huile a Pizza +",
-        descriptions: "Un peu comme une super potions",
+        name: "Pizza Oil +",
+        descriptions: "Restore a medium amount of Hp",
         succes: [
-            {type:"textMessage", text: "{CASTER} utilise une {ACTION}"}, 
+            {type:"textMessage", text: "{CASTER} use a {ACTION}"}, 
             { type:"stateChange", recovery: 100},
-            {type:"textMessage", text: "{CASTER} se soigne de 100hp"},
+            {type:"textMessage", text: "{CASTER} heal 100hp"},
         ]
     },
     hyperHealingItem: {
-        name: "Huile a Pizza ++",
-        descriptions: "Un peu comme une hyper potions",
+        name: "Pizza Oil ++",
+        descriptions: "Restore a huge amount of Hp",
         succes: [
-            {type:"textMessage", text: "{CASTER} utilise une {ACTION}"}, 
+            {type:"textMessage", text: "{CASTER} use a {ACTION}"}, 
             { type:"stateChange", recovery: 200},
-            {type:"textMessage", text: "{CASTER} se soigne de 200hp"},
+            {type:"textMessage", text: "{CASTER} heal 200hp"},
         ]
     },
     resetStatus: {
-        name: "Purification",
-        descriptions: "Enlève tous status appliquer sur une pizza",
+        name: "Magic Oil",
+        descriptions: "Remove all status",
         succes : [
-            {type:"textMessage", text: "{CASTER} utilise une {ACTION}"}, 
+            {type:"textMessage", text: "{CASTER} use a {ACTION}"}, 
             { type:"stateChange", status: null, onCaster: true},
         ]
     }

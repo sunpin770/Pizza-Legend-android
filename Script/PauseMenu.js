@@ -16,14 +16,14 @@ class PauseMenu {
       return [
         {
           label: "Team",
-          descriptions: "Change pizza Lineup",
+          descriptions: "Change the pizza lineup",
           handler: () => {
             this.menu.setOptions(this.getOptions("team"));
           },
         },
         {
           label: "Save",
-          descriptions: "Save your Progress",
+          descriptions: "Save your progress",
           handler: () => {
             this.progress.save();
             this.close();
@@ -93,15 +93,15 @@ class PauseMenu {
 
       return [
         {
-          label: `Lead the team`,
-          descriptions: "undefined",
+          label: `Put a team leader`,
+          descriptions: "",
           handler: () => {
             playerState.moveToFront(currentPizzaId);
             this.menu.setOptions(this.getOptions("root"));
           },
         },
         {
-          label: "Statistical",
+          label: "Statistics",
           descriptions: "",
           handler: () => {
             this.menu.setOptions(

@@ -95,10 +95,10 @@ class PlayerState {
             {type:"walk", direction:"up", who:"npc2"},
             //Put Dialogue
             {type:"textMessage", text:"Welcome to PizzaMania!", who:"??"},
-            {type:"textMessage", text:`I'm ${tutorName} a pizza Teacher.`, who:tutorName},
+            {type:"textMessage", text:`I'm ${tutorName}, a Pizza teacher.`, who:tutorName},
             {type:"textMessage", text:"This world is similar to another world named 'Pokemon' but with Pizzas.", who: tutorName},
             {type:"textMessage", text:"On the left, there is a Pizza Stone which is an item that can give you your first Pizza.", who: tutorName},
-            {type:"textMessage", text:"In this one you be able to select only one among 3 Pizzas. The 2 that are left can be unlocked soon.", who: tutorName},
+            {type:"textMessage", text:"With this, you will be able to select only one Pizza among 3. The 2 left can be unlocked soon.", who: tutorName},
             // {type:"textMessage", text:"This world work with types, to win fight you need to have the right type of Pizza.", who:"??"},
             {type:"textMessage", text:"Choose the right one!", who: tutorName},
             {type:"walk", direction:"left", who:"npc2"},

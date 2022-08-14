@@ -57,7 +57,8 @@ window.ennemies = {
             "b1": {
                 ...pizzas.getPizzaByLvl("c001", 2),
                 actions: ["damage1"],
-                hp: 1
+                hp: 15,
+                maxHp: 15
             },
         }
     },

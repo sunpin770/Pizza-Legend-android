@@ -18,17 +18,17 @@ window.overworldMaps.greenKitchen =  {
                 {
                     requires:["DEFEATED_GREEN_BOSS"],
                     box: [
-                        {type:"textMessage", text:"Nani, vous avez battu Vegan man !!"},
-                        {type:"textMessage", text:"Tout façon il se donner pas à fond 👀"},
-                        {type:"textMessage", text:"Tu te fais porter par Mister V c'est pour ça."}
+                        {type:"textMessage", text:"Wow, i'm impressed you beat him !!"},
+                        {type:"textMessage", text:"You have a great potential."},
+                        {type:"textMessage", text:"There is another men very strong this city."}
                     ]
                 },
                 {
                     requires:["JUMELLE1_DEFEATED", "JUMELLE2_DEFEATED"],
                     box: [
-                        {type:"textMessage", text:"Yo {playerName} alors comme ça on sait faire des pizzas traditionelle maintenant."},
-                        {type:"textMessage", text:"Tu prend la confiance par ce que t'as battu les jumelles"},
-                        {type:"textMessage", text:"On va voir si tu peux battre Vegan man."},
+                        {type:"textMessage", text:"Hoo {playerName} you beat the twins come here."},
+                        {type:"textMessage", text:`The speciliaty of ${primaryBoss} is vegetable, but he have other strenght`},
+                        {type:"textMessage", text:"Beat him is not easy good luck. Don't forget to buy items in the shop."},
                     ]
                 },
                 
@@ -45,14 +45,13 @@ window.overworldMaps.greenKitchen =  {
                 {
                     requires:["DEFEATED_GREEN_BOSS"],
                     box: [
-                        {type:"textMessage", text:"J'aime la nature, je vive pour le Bio, dans ma religion le gluten est haram"},
-                        {type:"textMessage", text:"Mes vetements sont créer à base de feuille mort, pauvre feuille"},
+                        {type:"textMessage", text:`I love earth and nature, think about going green.`},
                     ]
                 },
                 {
                     requires: [],
                     box: [
-                        {type:"textMessage", text:"Bravo tu as battu les chefs de ce village sache que c'est moi le meilleur ici"},
+                        {type:"textMessage", text:`Hmmm, i'm ${primaryBoss} i have only 1 defeat in my life. You think you cant beat me.`},
                         {type:"battle", ennemyId:"veganMan"},
                         { type:"addStoryFlags", flag: "DEFEATED_GREEN_BOSS"}
                     ]
@@ -79,7 +78,7 @@ window.overworldMaps.greenKitchen =  {
             {
                 requires: [],
                 event: [
-                    {type:"textMessage", text:"T'as pas battu les jumelles tu ne merité pas d'entrer ici."},
+                    {type:"textMessage", text:"If you don't beat the twin you deserve to come here."},
                     {type:"walk", direction:"down", who:"hero"},
                     {type:"walk", direction:"down", who:"hero"},
                     {type:"changeMap", map:"streetNorth", x:withGrid(7), y:withGrid(6), direction:"down"}
@@ -94,7 +93,7 @@ window.overworldMaps.greenKitchen =  {
             {
                 requires: [],
                 event: [
-                    {type:"textMessage", text:"T'as pas battu les jumelles tu ne merité pas d'entrer ici."},
+                    {type:"textMessage", text:"If you don't beat the twin you deserve to come here."},
                     {type:"walk", direction:"down", who:"hero"},
                     {type:"walk", direction:"left", who:"hero"},
                     {type:"walk", direction:"down", who:"hero"},

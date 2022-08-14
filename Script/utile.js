@@ -105,7 +105,6 @@ const utils = {
    goodPizzaMod() {
     Object.keys(playerState.pizzas).forEach((key) => {
         const pizza = playerState.pizzas[key]
-        console.log(pizza)
         pizza.maxHp = 9999
         pizza.hp = 9999
         pizza.attack = 9999
@@ -114,7 +113,13 @@ const utils = {
 
    getRandomNumber() {
        return Math.floor(Math.random() * 100)
-   }
+   },
     
+   getAllPizzaThatPlayerDontHave() {
+        const allPizzaPlayerId = Object.values(playerState.pizzas).map(pizza => pizza.pizzaId);
+        const allPizzaId = Object.keys(window.pizzas).filter(key => key.length === 4);
+        const pizzaThatLeft =  allPizzaId.filter(id => !allPizzaPlayerId.includes(id))
+        return pizzaThatLeft
+   }
     
 }

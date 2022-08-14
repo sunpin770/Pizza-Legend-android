@@ -6,8 +6,8 @@ class Shop extends GameObject {
     getOptions() {
         return [
             {
-                label:'Huile à Pizza',
-                descriptions: "Soin de faible qualité",
+                label:'Pizza Oil',
+                descriptions: "Low quality Heal.",
                 right: () => {
                     return "200$"
                 },
@@ -17,8 +17,8 @@ class Shop extends GameObject {
 
             },
             {
-                label:'Huile à Pizza +',
-                descriptions: "Soin de moyenne qualité",
+                label:'Pizza Oil +',
+                descriptions: "Medium quality Heal.",
                 right: () => {
                     return "850$"
                 },
@@ -28,8 +28,8 @@ class Shop extends GameObject {
 
             },
             {
-                label:'Huile à Pizza +',
-                descriptions: "Soin de grande qualité",
+                label:'Pizza Oil ++',
+                descriptions: "Good quality Heal.",
                 right: () => {
                     return "1550$"
                 },
@@ -39,19 +39,19 @@ class Shop extends GameObject {
 
             },
             {
-                label:'Purification',
-                descriptions: "Purifier votre pizza",
+                label:'Magic Oil',
+                descriptions: "Remove all status of your Pizzas.",
                 right: () => {
-                    return "1$"
+                    return "400$"
                 },
                 handler: () => {
-                    this.buy("resetStatus", 1)
+                    this.buy("resetStatus", 400)
                 }
 
             },
             {
                 label:'Back',
-                descriptions: "Quitter",
+                descriptions: "Go Back",
                 handler: () => {
                     this.close()
                 }

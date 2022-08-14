@@ -5,6 +5,7 @@ class NotifPizza {
   }
 
   getOptions() {
+
     return [
       {
         label: `Level: ${this.currentPlayerStatePizza.level}`,
@@ -20,6 +21,12 @@ class NotifPizza {
       },
       {
         label: `Attack: ${this.currentPlayerStatePizza.attack}`,
+        descriptions: "",
+        disable: true,
+        handler: () => {},
+      },
+      {
+        label: `Attack.Spe: ${this.currentPlayerStatePizza.attackSpe}`,
         descriptions: "",
         disable: true,
         handler: () => {},
@@ -91,6 +98,7 @@ class NotifPizza {
   updateData() {
     //Mettre a jour les données lors de l'initialisation du combattant
     this.currentPlayerStatePizza.attack = this.currentPizza.attack;
+    this.currentPlayerStatePizza.attackSpe = this.currentPizza.attackSpe;
     this.currentPlayerStatePizza.defense = this.currentPizza.defense;
     this.currentPlayerStatePizza.defenseSpe = this.currentPizza.defenseSpe;
     this.currentPlayerStatePizza.hp = this.currentPizza.hp;
@@ -104,6 +112,7 @@ class NotifPizza {
 
   update(resolve) {
     this.currentPlayerStatePizza.attack = this.currentPizza.attack;
+    this.currentPlayerStatePizza.attackSpe = this.currentPizza.attackSpe;
     this.currentPlayerStatePizza.defense = this.currentPizza.defense;
     this.currentPlayerStatePizza.defenseSpe = this.currentPizza.defenseSpe;
     this.currentPlayerStatePizza.hp = this.currentPizza.hp;

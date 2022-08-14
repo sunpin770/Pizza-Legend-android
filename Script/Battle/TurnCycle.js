@@ -206,7 +206,7 @@ class TurnCycle {
             const xp = who.givesXp
 
             await this.onNewEvent({
-                type:"textMessage", text:` ${alivePizza.name} earn ${xp} XP !`
+                type:"textMessage", text:` ${alivePizza.name} earns ${xp} XP !`
             })
 
             await this.onNewEvent({ 
@@ -221,7 +221,7 @@ class TurnCycle {
         if (winner) {
             await this.onNewEvent({
                 type:"textMessage",
-                text:`${winner === "player" ? playerState.name : this.battle.ennemy.name} have won!`
+                text:`${winner === "player" ? playerState.name : this.battle.ennemy.name} has won!`
             })
             this.onWinner(winner)
             return "winner"

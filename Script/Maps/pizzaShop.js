@@ -14,6 +14,25 @@ window.overworldMaps.pizzaShop = {
             x: withGrid(3),
             y: withGrid(5),
             useShadow: true,
+            behavior: [
+                {
+                    requires: [],
+                    behaviorLoop: [
+                        { type: "stand", direction: "down", time: 90000000000 },
+                    ]
+                }
+            ],
+            talkingBox: [
+                {
+                    requires: [],
+                    box: [
+                        {type: "textMessage", text:"Your Welcome. Here you can buy some items that can helps in your fight.", who: vendorName, faceHero:"npc1"},
+                        {type: "textMessage", text:"To earn money you need to win fight.", who: vendorName},
+                        {type: "textMessage", text:"To buy something, come the front of me.", who: vendorName},
+                    ]
+
+                }
+            ]
         }),
         shop1: new Shop({
             x: withGrid(3),
@@ -21,7 +40,7 @@ window.overworldMaps.pizzaShop = {
             talkingBox: [
                 {
                     box: [
-                        {type:"textMessage", text:"Je suis le magasin"},
+                        {type:"textMessage", text:"Welcome at the shop."},
                         {type:"shopMenu", which:"shop1"}
                     ]
                 }

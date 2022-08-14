@@ -20,10 +20,10 @@ window.overworldMaps.streetNorth =  {
                 {
                     requires: ["FOURTH_WIN"],
                     box: [
-                        {type:"textMessage", text:"Bien joué maintenant que tu as prouvé que tu a certain niveau, tu peux accéder à ta première cuisine,", faceHero:"npc15", who:"Julio"},
-                        {type:"textMessage", text:" la Cuisine Verte, a l'intérieur un redoutable chef pizza Pizza d'attend", who:"Julio"},
-                        {type:"textMessage", text:"Ptit conseil sa pizza favorite est de type légume, bref y'a ses discipline a vaincre", who:"Julio"},
-                        {type:"textMessage", text:"Tu sais ce que  t'as à faire.", who:"Julio"},
+                        {type:"textMessage", text:"Congrats, you beat the strongest Pizza Chef.", faceHero:"npc15", who: julioNpc},
+                        {type:"textMessage", text:"If you beat the twins, you will able to enter your first kitchen.", who: julioNpc},
+                        {type:"textMessage", text:"In the kitchen there is a very strong Pizza Chef that is also the strongest in the whole city.", who: julioNpc},
+                        {type:"textMessage", text:"I was never able to defeat him, good luck.", who: julioNpc},
                     ]
                 }
             ]
@@ -37,13 +37,12 @@ window.overworldMaps.streetNorth =  {
                 {
                     requires: ["JUMELLE1_DEFEATED"],
                     box: [
-                        {type:"textMessage", text:"Ok Bat ma soeur maintenant", faceHero:"npc16"},
+                        {type:"textMessage", text:"You are actually pretty strong, but not enough for my sister! good luck.", faceHero:"npc16"},
                     ]
                 },
                 {      
                     box: [
-                        {type:"textMessage", text:"Yo on est des jumeles Vegan, on détéste les Samourai Kebab", faceHero:"npc16"},
-                        {type:"textMessage", text:"Pour rentrer dans la cuisine faudras que tu me passe sur le corp"},
+                        {type:"textMessage", text:"Yo, we are the Vegan Twins, we are here to defend this kitchen.", faceHero:"npc16"},
                         {type:"battle", ennemyId:"npc16"},
                         {type:"addStoryFlags", flag:"JUMELLE1_DEFEATED"},
                     ]
@@ -67,13 +66,14 @@ window.overworldMaps.streetNorth =  {
                 {
                     requires: ["JUMELLE2_DEFEATED"],
                     box: [
-                        {type:"textMessage", text:"Ok Bat Vegan Man maintenant", faceHero:"npc16"},
+                        {type:"textMessage", text:"Oh no I lost, I can't believe it.", faceHero:"npc16"},
+                        {type:"textMessage", text:"Now you can go in the kitchen and fight against my master.", faceHero:"npc16"},
+                        {type:"textMessage", text:"Don't expect to have an easy fight. Enjoy your lost.", faceHero:"npc16"},
                     ]
                 },
                 {      
                     box: [
-                        {type:"textMessage", text:"Yo on est des jumeles Vegan, on détéste les Samourai Kebab", faceHero:"npc16"},
-                        {type:"textMessage", text:"Par contre moi je perd pas"},
+                        {type:"textMessage", text:"Be ready to eat dust.", faceHero:"npc16"},
                         {type:"battle", ennemyId:"npc17"},
                         {type:"addStoryFlags", flag:"JUMELLE2_DEFEATED"},
                     ]
@@ -129,7 +129,7 @@ window.overworldMaps.streetNorth =  {
                 event: [
                     {who:"npc15", type:"walk", direction:"down"},
                     {who:"npc15", type:"walk", direction:"down"},
-                    {type:"textMessage", text:"Bats tous les Npcs d'en bat avec de venir ici"},
+                    {type:"textMessage", text:"You can't access this area until you have defeated the strongest Chef of the fighting place."},
                     {who:"npc15", type:"stand", direction:"down", time: 1},
                     {who:"hero", type:"walk", direction:"down"},
                     {

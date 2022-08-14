@@ -23,7 +23,7 @@ window.overworldMaps.streetLower = {
             { type: "healTeam" },
             {
               type: "textMessage",
-              text: "Your Pizzas is complety heal.",
+              text: "Your Team is complety healed.",
             },
           ],
         },
@@ -53,25 +53,48 @@ window.overworldMaps.streetLower = {
           ],
         },
         {
+          requires: ["DEAFEATED_RANDOM_STREET_4"],
           box: [
             {
               type: "textMessage",
-              text: "Ohhh, a newbie, you have some Pizzas!",
+              text: "Wow, you managed to defeat all of them.",
+              faceHero:"npc7",
               who: secondaryBoss,
             },
             {
               type: "textMessage",
-              text: "This is a fighting place, you can fight with other chef Pizza.",
+              text: "BUT! There are still other Chefs in the North of the city waiting for you.",
               who: secondaryBoss,
             },
             {
               type: "textMessage",
-              text: "This the best way to gain some experience and become better Chief Pizza.",
+              text: "Go defeat them and come back to me.",
+              faceHero:"npc7",
+              who: secondaryBoss,
+            },
+          ]
+        },
+        {
+          box: [
+            {
+              type: "textMessage",
+              text: "Ohhh, a newbie! You even own a Pizza!",
+              faceHero:"npc7",
               who: secondaryBoss,
             },
             {
               type: "textMessage",
-              text: "If you fight all Chief Pizza in this city, I will fight against you.",
+              text: "This is a fighting place, you can fight with other Pizza Chef.",
+              who: secondaryBoss,
+            },
+            {
+              type: "textMessage",
+              text: "This the best way to gain some experiences and become a better Pizza Chef.",
+              who: secondaryBoss,
+            },
+            {
+              type: "textMessage",
+              text: "If you are able to defeat every Pizza Chef in this city, I will fight against you.",
               who: secondaryBoss,
             },
             {
@@ -79,6 +102,14 @@ window.overworldMaps.streetLower = {
               text: "Good Luck.",
               who: secondaryBoss,
             },
+          ],
+        },
+      ],
+      behavior: [
+        {
+          behaviorLoop: [
+            { type: "stand", direction: "left", time: 5000 },
+            { type: "stand", direction: "down", time: 3000 },
           ],
         },
       ],
@@ -94,11 +125,11 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "We are 4 here and there is a hierarchy. You should do it from the most lamest to the strongest.",
+              text: "There is a hierarchy. You should do it from the weakest to the strongest.",
             },
             {
               type: "textMessage",
-              text: "I'm the lamest.",
+              text: "I'm the weakest.",
             },
             { type: "battle", ennemyId: "npc11" },
             { type: "addStoryFlags", flag: "FIRST_WIN" },
@@ -128,15 +159,15 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "Hahaha you beat me but i'm not very good.",
+              text: "Hahaha, you beat me but i'm not very good.",
             },
             {
               type: "textMessage",
-              text: "When you beat a new Chief Pizza you can do a new Pizza.",
+              text: "When you have defeated a new Pizza Chef you can make a new Pizza.",
             },
             {
               type: "textMessage",
-              text: "There are some Pizza Stone to the East of this city.",
+              text: "There are some Pizza Stones in front of the shop.",
             },
           ],
         },
@@ -144,11 +175,15 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "I'm the third Chief Pizza here.",
+              text: "I'm the third Pizza Chef here.",
             },
             {
               type: "textMessage",
-              text: "Anyway you won't be able to beat the first one.",
+              text: "You can repeat the fight with the weakest Pizza Chef and gain some xp.",
+            },
+            {
+              type: "textMessage",
+              text: "When a Pizza is level 2, it unlocks a new attack of his type.",
             },
             { type: "battle", ennemyId: "npc12" },
             { type: "addStoryFlags", flag: "SECOND_WIN" },
@@ -179,11 +214,7 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "You know, i'm respectful men I don't play with that.",
-            },
-            {
-              type: "textMessage",
-              text: "There is famine in the world.",
+              text: "...I lost just because I'm a respectful Pizza chef that doesn't play with food",
             },
           ],
         },
@@ -191,11 +222,11 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "I think use Pizza is disrespectful. You must never play with food.",
+              text: "I think playing with Pizza is disrespectful. You must never play with food.",
             },
             {
               type: "textMessage",
-              text: "I'm kidding let's fight.",
+              text: "I'm kidding, let's fight.",
             },
             { type: "battle", ennemyId: "npc13" },
             { type: "addStoryFlags", flag: "THIRD_WIN" },
@@ -224,13 +255,13 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "There are other Chief Pizza in the North of the city and there are stronger than me.",
+              text: "There are other Pizza Chef in the North of the city and there are stronger than me.",
             },
           ],
         },
         {
           box: [
-            { type: "textMessage", text: "I juste want to win." },
+            { type: "textMessage", text: "I just want to win." },
             { type: "battle", ennemyId: "npc14" },
             { type: "addStoryFlags", flag: "FOURTH_WIN" },
             { type: "addStoryFlags", flag: "DEAFEATED_RANDOM_STREET_4" },
@@ -242,7 +273,6 @@ window.overworldMaps.streetLower = {
       x: withGrid(33),
       y: withGrid(10),
       storyFlag: "GET_SECOND_PIZZA",
-      pizzas: ["f001", "v001", "s001", "c001"],
       talkingBox: [
         {
           requires: ["GET_SECOND_PIZZA"],
@@ -252,7 +282,7 @@ window.overworldMaps.streetLower = {
           requires: ["FIRST_WIN"],
           box: [
             { type: "textMessage", text: "Choose a new Pizza." },
-            { type: "craftingMenu", pizzas: ["f001", "v001", "s001"] },
+            { type: "craftingPizza Chefu", pizzas: utils.getAllPizzaThatPlayerDontHave() },
             { type: "addStoryFlags", flag: "GET_SECOND_PIZZA" },
           ],
         },
@@ -260,7 +290,7 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "Come when you beat the lamest men.",
+              text: "Come when you have defeated the weakest Pizza Chef.",
             },
           ],
         },
@@ -270,7 +300,6 @@ window.overworldMaps.streetLower = {
       x: withGrid(33),
       y: withGrid(11),
       storyFlag: "GET_THIRD_PIZZA",
-      pizzas: ["f001", "v001", "s001", "c001"],
       talkingBox: [
         {
           requires: ["GET_THIRD_PIZZA"],
@@ -280,13 +309,13 @@ window.overworldMaps.streetLower = {
           requires: ["SECOND_WIN"],
           box: [
             { type: "textMessage", text: "Choose a new Pizza." },
-            { type: "craftingMenu", pizzas: ["f001", "v001", "s001"] },
+            { type: "craftingPizza Chefu", pizzas:  utils.getAllPizzaThatPlayerDontHave() },
             { type: "addStoryFlags", flag: "GET_THIRD_PIZZA" },
           ],
         },
         {
           box: [
-            { type: "textMessage", text: "Come when you beat the third men." },
+            { type: "textMessage", text: "Come when you have defeated the third Pizza Chef." },
           ],
         },
       ],
@@ -295,7 +324,6 @@ window.overworldMaps.streetLower = {
       x: withGrid(33),
       y: withGrid(12),
       storyFlag: "GET_FOURTH_PIZZA",
-      pizzas: ["f001", "v001", "s001", "c001", "c002"],
       talkingBox: [
         {
           requires: ["GET_FOURTH_PIZZA"],
@@ -306,8 +334,8 @@ window.overworldMaps.streetLower = {
           box: [
             { type: "textMessage", text: "Choose a new Pizza" },
             {
-              type: "craftingMenu",
-              pizzas: ["f001", "v001", "s001", "c001", "c002"],
+              type: "craftingPizza Chefu",
+              pizzas:  utils.getAllPizzaThatPlayerDontHave(),
             },
             { type: "addStoryFlags", flag: "GET_FOURTH_PIZZA" },
           ],
@@ -316,7 +344,7 @@ window.overworldMaps.streetLower = {
           box: [
             {
               type: "textMessage",
-              text: "Come when you beat the Second Men",
+              text: "Come when you have defeated the second Pizza Chef",
             },
           ],
         },
@@ -357,11 +385,11 @@ window.overworldMaps.streetLower = {
           { type: "textMessage", text: "Yooo, listen a minute." },
           {
             type: "textMessage",
-            text: "You can go in the Pause Menu with the button '&'.",
+            text: "You can access the pause Pizza Chefu with the button '&'.",
           },
           {
             type: "textMessage",
-            text: "It's very useful you can do some save and manage your Team.",
+            text: "It's very useful as you can do some save your progress and manage your team.",
           },
           { type: "addStoryFlags", flag: "GET_TUTORIALS" },
         ],
@@ -378,7 +406,7 @@ window.overworldMaps.streetLower = {
           { type: "textMessage", text: "Yooo, listen a minute." },
           {
             type: "textMessage",
-            text: "You can go in the Pause Menu with the button '&'.",
+            text: "You can go in the Pause Pizza Chefu with the button '&'.",
           },
           {
             type: "textMessage",
@@ -399,7 +427,7 @@ window.overworldMaps.streetLower = {
           { type: "textMessage", text: "Yooo, listen a minute." },
           {
             type: "textMessage",
-            text: "You can go in the Pause Menu with the button '&'.",
+            text: "You can go in the Pause Pizza Chefu with the button '&'.",
           },
           {
             type: "textMessage",

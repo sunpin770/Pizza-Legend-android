@@ -1,4 +1,5 @@
 class PizzaStone extends GameObject {
+    //Value of plater Pizza recup tous les pizzas ou les Id sont diff
     constructor(config) {
         super(config);
 
@@ -13,7 +14,7 @@ class PizzaStone extends GameObject {
             currentAnimation: "unused-down"
         })
         this.storyFlag = config.storyFlag
-        this.pizzas = config.pizzas
+        this.pizzas = config.pizzas 
         this.talking = config.talkingBox || [
             {
                 requires: [this.storyFlag],
@@ -36,4 +37,5 @@ class PizzaStone extends GameObject {
     update() {
         this.sprite.currentAnimation = playerState.storyFlags[this.storyFlag] ? "used-down" : "unused-down"
     }
+
 }

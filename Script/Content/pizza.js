@@ -14,7 +14,7 @@ window.pizzas = {
     "s001": {
         name: "Samourai Kebab",
         type: window.pizzaTypes.viande,
-        descriptions: "Fast and powerful, this is a great offensive options.",
+        descriptions: "Fast and powerful, this is a great offensive option.",
         src:"./images/characters/pizzas/s001.png",
         icon: './images/icons/meat.png',
         canGetActions: ["meatBasic", "basicBurn", "hotTime"]
@@ -22,7 +22,7 @@ window.pizzas = {
     "v001": {
         name: "Vegan", 
         type: window.pizzaTypes.veggie,
-        descriptions: "Lot of Hp and utilies spell, in an Rpg we call this a Tank.",
+        descriptions: "It has a lot of Hp, a defensive Pizza",
         src:"./images/characters/pizzas/v001.png",
         icon: './images/icons/veggie.png',
         canGetActions: ["veggieBasic", "basicRecoveryVeggie", "basicDefStatus"]
@@ -30,15 +30,15 @@ window.pizzas = {
     "c002": {
         name: "The Goat",
         type: window.pizzaTypes.chesse,
-        descriptions: "Relatively balance, an all-in-one.",
+        descriptions: "Relatively balanced, an all-in-one.",
         src:"./images/characters/pizzas/c002.png",
         icon: './images/icons/cheese.png',
-        canGetActions: ["cheeseBasic", "Poison", "buffAtkSpe"]
+        canGetActions: ["cheeseBasic", "basicDebuffAtk"]
     },
     "c001": {
         name: "Blue Cheese",
         type: window.pizzaTypes.chesse,
-        descriptions: "Fromage fort et puissant",
+        descriptions: "Greate scale, ...",
         src:"./images/characters/pizzas/c001.png",
         icon: './images/icons/cheese.png',
         canGetActions: ["cheeseBasic", "basicDefSpeSatus", "buffAtkSpe"]
@@ -46,7 +46,7 @@ window.pizzas = {
     "f001": {
         name: "Mushy",
         type: window.pizzaTypes.fungi,
-        descriptions: "Oula t'es un bizzare",
+        descriptions: "A dangerous one that can inflict some strong status.",
         src:"./images/characters/pizzas/f001.png",
         icon: './images/icons/fungi.png',
         canGetActions: ["fungiBasic", "Poison", "buffAtkSpe"]

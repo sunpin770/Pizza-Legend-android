@@ -54,13 +54,18 @@ window.overworldMaps.demoRoom = {
       {
         requires: ["DEFEATED_GREEN_BOSS"],
         event: [
+          // {
+          //   type: "changeMap",
+          //   map: "diningRoom",
+          //   x: withGrid(6),
+          //   y: withGrid(11),
+          //   direction: "up",
+          // },
           {
-            type: "changeMap",
-            map: "diningRoom",
-            x: withGrid(6),
-            y: withGrid(11),
-            direction: "up",
-          },
+            type: "textMessage",
+            text: "In Developement...",
+            who: "Yanis-Gerst"
+          }
         ],
       },
       {
@@ -143,12 +148,17 @@ window.overworldMaps.demoRoom = {
             },
             {
               type: "textMessage",
-              text: "When you won a fight you earn some money and xp. Money can be used at the Store.",
+              text: "When you won a fight you earn some money and xp.",
               who: "Mister V",
             },
             {
               type: "textMessage",
               text: "Money can be used at the Store to buy some useful items when you fight.",
+              who: "Mister V",
+            },
+            {
+              type: "textMessage",
+              text: "Also you can learn more about types in the bookshelves of this room.",
               who: "Mister V",
             },
             {
@@ -194,5 +204,33 @@ window.overworldMaps.demoRoom = {
       storyFlag: "GET_FIRST_PIZZA",
       pizzas: ["v001", "s001", "c002"],
     }),
+    bookShelve1: new Shop({
+      x: withGrid(4),
+      y: withGrid(4),
+      talkingBox: [
+          {
+              box: [
+                  {type:"textMessage", text:"Meat beat vegatable. Veggie beat Cheese. Cheese beat Meat. Fungi is Neutral"},
+                  {type:"textMessage", text:"Pizza have attack and attack Special."},
+                  {type:"textMessage", text:"Pure attack is based on attack statistical."},
+                  {type:"textMessage", text:"Buff and status is based on attack Special."},
+              ]
+          }
+      ]
+  }),
+  bookShelve2: new Shop({
+    x: withGrid(3),
+    y: withGrid(4),
+    talkingBox: [
+        {
+            box: [
+                {type:"textMessage", text:"Meat beat vegatable. Veggie beat Cheese. Cheese beat Meat. Fungi is Neutral"},
+                {type:"textMessage", text:"Pizza have attack and attack Special."},
+                  {type:"textMessage", text:"Pure attack is based on attack statistical."},
+                  {type:"textMessage", text:"Buff and status is based on attack Special."},
+            ]
+        }
+    ]
+}),
   },
 };

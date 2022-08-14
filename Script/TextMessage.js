@@ -46,7 +46,7 @@ class TextMessage {
 
     getNameForm() {
         this.form = document.createElement("input") 
-        this.form.placeholder = "Ton nom..."
+        this.form.placeholder = "Your name..."
         this.form.classList.add("input-playername")
     }
 
