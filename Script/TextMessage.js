@@ -58,7 +58,9 @@ class TextMessage {
         this.onComplete()
 
         if (!this.getPlayerName) return
-        window.playerState.name = this.form.value
+        if (this.form.value) {
+            window.playerState.name = this.form.value
+        }
         this.form.remove()
     }
 
