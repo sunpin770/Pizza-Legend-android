@@ -142,18 +142,18 @@ window.overworldMaps.demoRoom = {
           box: [
             {
               type: "textMessage",
-              text: "GG, You won your first fight.",
+              text: "Congrats, You won your first fight.",
               faceHero: "npc2",
               who: "Mister V",
             },
             {
               type: "textMessage",
-              text: "When you won a fight you earn some money and xp.",
+              text: "When you win a fight, you earn some money and xp.",
               who: "Mister V",
             },
             {
               type: "textMessage",
-              text: "Money can be used at the Store to buy some useful items when you fight.",
+              text: "Money can be used at the Store to buy useful items when you fight.",
               who: "Mister V",
             },
             {
@@ -163,7 +163,7 @@ window.overworldMaps.demoRoom = {
             },
             {
               type: "textMessage",
-              text: "Got the city to beat some Chief Pizza.",
+              text: "Go to the city to beat the Pizza Chefs.",
               who: "Mister V",
             },
           ],
@@ -210,10 +210,10 @@ window.overworldMaps.demoRoom = {
       talkingBox: [
           {
               box: [
-                  {type:"textMessage", text:"Meat beat vegatable. Veggie beat Cheese. Cheese beat Meat. Fungi is Neutral"},
-                  {type:"textMessage", text:"Pizza have attack and attack Special."},
-                  {type:"textMessage", text:"Pure attack is based on attack statistical."},
-                  {type:"textMessage", text:"Buff and status is based on attack Special."},
+                  {type:"textMessage", text:"Meat has the advantage against Veggie. Veggie has the advantage against Cheese. Cheese has the advantage against Meat. Mushroom is Neutral"},
+                  {type:"textMessage", text:"Pizzas have attack and special attack."},
+                  {type:"textMessage", text:"Pure attack is based on attack statitics."},
+                  {type:"textMessage", text:"Buff and status are based on special attack."},
               ]
           }
       ]
@@ -224,10 +224,10 @@ window.overworldMaps.demoRoom = {
     talkingBox: [
         {
             box: [
-                {type:"textMessage", text:"Meat beat vegatable. Veggie beat Cheese. Cheese beat Meat. Fungi is Neutral"},
-                {type:"textMessage", text:"Pizza have attack and attack Special."},
-                  {type:"textMessage", text:"Pure attack is based on attack statistical."},
-                  {type:"textMessage", text:"Buff and status is based on attack Special."},
+                {type:"textMessage", text:"Meat has the advantage against Veggie. Veggie has the advantage against Cheese. Cheese has the advantage against Meat. Mushroom is Neutral"},
+                {type:"textMessage", text:"Pizzas have attack and special attack."},
+                  {type:"textMessage", text:"Pure attack is based on attack statitics."},
+                  {type:"textMessage", text:"Buff and status are based on special attack."},
             ]
         }
     ]

@@ -31,7 +31,6 @@ class OverworldEvent {
     walk(resolve) {
 
         const who = this.map.gameObject[ this.event.who ]
-        console.log("who est censé marché")
         who.startBehavior({
             map: this.map
         }, {

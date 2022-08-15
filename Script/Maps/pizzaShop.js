@@ -26,9 +26,9 @@ window.overworldMaps.pizzaShop = {
                 {
                     requires: [],
                     box: [
-                        {type: "textMessage", text:"Your Welcome. Here you can buy some items that can helps in your fight.", who: vendorName, faceHero:"npc1"},
+                        {type: "textMessage", text:"Welcome! In this shop, you can buy items that can help in your fight.", who: vendorName, faceHero:"npc1"},
                         {type: "textMessage", text:"To earn money you need to win fight.", who: vendorName},
-                        {type: "textMessage", text:"To buy something, come the front of me.", who: vendorName},
+                        {type: "textMessage", text:"To buy something, come in front of the counter.", who: vendorName},
                     ]
 
                 }
@@ -40,7 +40,7 @@ window.overworldMaps.pizzaShop = {
             talkingBox: [
                 {
                     box: [
-                        {type:"textMessage", text:"Welcome at the shop."},
+                        {type:"textMessage", text:"Welcome in the shop."},
                         {type:"shopMenu", which:"shop1"}
                     ]
                 }

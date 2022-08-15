@@ -18,17 +18,17 @@ window.overworldMaps.greenKitchen =  {
                 {
                     requires:["DEFEATED_GREEN_BOSS"],
                     box: [
-                        {type:"textMessage", text:"Wow, i'm impressed you beat him !!"},
-                        {type:"textMessage", text:"You have a great potential."},
-                        {type:"textMessage", text:"There is another men very strong this city."}
+                        {type:"textMessage", text:"I have never seen that, it was a very impressive fight!"},
+                        {type:"textMessage", text:"You still have a long way to go, but you have huge potential."},
                     ]
                 },
                 {
                     requires:["JUMELLE1_DEFEATED", "JUMELLE2_DEFEATED"],
                     box: [
-                        {type:"textMessage", text:"Hoo {playerName} you beat the twins come here."},
-                        {type:"textMessage", text:`The speciliaty of ${primaryBoss} is vegetable, but he have other strenght`},
-                        {type:"textMessage", text:"Beat him is not easy good luck. Don't forget to buy items in the shop."},
+                        {type:"textMessage", text:"I'm genuinely impressed!"},
+                        {type:"textMessage", text:`The master Chef is over here, you can go fight him.`},
+                        {type:"textMessage", text:"But before that, get ready and make some preparations beforehand."},
+                        {type:"textMessage", text:"Best luck to you!"},
                     ]
                 },
                 
@@ -45,13 +45,15 @@ window.overworldMaps.greenKitchen =  {
                 {
                     requires:["DEFEATED_GREEN_BOSS"],
                     box: [
-                        {type:"textMessage", text:`I love earth and nature, think about going green.`},
+                        {type:"textMessage", text:`I'm just not feeling well today, but next time you are bound to lose.`},
                     ]
                 },
                 {
                     requires: [],
                     box: [
-                        {type:"textMessage", text:`Hmmm, i'm ${primaryBoss} i have only 1 defeat in my life. You think you cant beat me.`},
+                        {type:"textMessage", text:"Finally you arrived, you sure made me wait.", who: primaryBoss},
+                        {type:"textMessage", text:"Sorry to disapoint you, but you stand no chance.", who: primaryBoss},
+                        {type:"textMessage", text:"Get ready to lose.", who: primaryBoss},
                         {type:"battle", ennemyId:"veganMan"},
                         { type:"addStoryFlags", flag: "DEFEATED_GREEN_BOSS"}
                     ]
@@ -78,7 +80,7 @@ window.overworldMaps.greenKitchen =  {
             {
                 requires: [],
                 event: [
-                    {type:"textMessage", text:"If you don't beat the twin you deserve to come here."},
+                    {type:"textMessage", text:"If you don't defeat the twins, you don't deserve to come here."},
                     {type:"walk", direction:"down", who:"hero"},
                     {type:"walk", direction:"down", who:"hero"},
                     {type:"changeMap", map:"streetNorth", x:withGrid(7), y:withGrid(6), direction:"down"}

@@ -11,7 +11,6 @@ class Npc extends Person {
     }
 
     startBehavior(state, behavior) {
-        console.log(this, "Start")
         this.direction = behavior.direction
        
         if (behavior.type === "walk") {
@@ -48,7 +47,7 @@ class Npc extends Person {
             }, behavior.time)   
             
         }
-        console.log("end")
+
     }
 
     

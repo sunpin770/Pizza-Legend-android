@@ -47,8 +47,9 @@ window.overworldMaps.streetLower = {
         {
           requires: ["DEFEATED_GREEN_BOSS"],
           box: [
-            { type: "textMessage", text: "Wow t'as battu Vegan Man" },
-            { type: "textMessage", text: "Fais moi voir ton potentiel" },
+            { type: "textMessage", text: "Uh? You defeated the master Chef!?", who: secondaryBoss },
+            { type: "textMessage", text: "I'm actually stronger than him.", who: secondaryBoss },
+            { type: "textMessage", text: "Fight me, newbie!", who: secondaryBoss },
             { type: "battle", ennemyId: "npc3" },
           ],
         },
@@ -282,7 +283,7 @@ window.overworldMaps.streetLower = {
           requires: ["FIRST_WIN"],
           box: [
             { type: "textMessage", text: "Choose a new Pizza." },
-            { type: "craftingPizza Chefu", pizzas: utils.getAllPizzaThatPlayerDontHave() },
+            { type: "craftingMenu", pizzas: utils.getAllPizzaThatPlayerDontHave() },
             { type: "addStoryFlags", flag: "GET_SECOND_PIZZA" },
           ],
         },
@@ -309,7 +310,7 @@ window.overworldMaps.streetLower = {
           requires: ["SECOND_WIN"],
           box: [
             { type: "textMessage", text: "Choose a new Pizza." },
-            { type: "craftingPizza Chefu", pizzas:  utils.getAllPizzaThatPlayerDontHave() },
+            { type: "craftingMenu", pizzas:  utils.getAllPizzaThatPlayerDontHave() },
             { type: "addStoryFlags", flag: "GET_THIRD_PIZZA" },
           ],
         },
@@ -334,7 +335,7 @@ window.overworldMaps.streetLower = {
           box: [
             { type: "textMessage", text: "Choose a new Pizza" },
             {
-              type: "craftingPizza Chefu",
+              type: "craftingMenu",
               pizzas:  utils.getAllPizzaThatPlayerDontHave(),
             },
             { type: "addStoryFlags", flag: "GET_FOURTH_PIZZA" },
@@ -385,7 +386,7 @@ window.overworldMaps.streetLower = {
           { type: "textMessage", text: "Yooo, listen a minute." },
           {
             type: "textMessage",
-            text: "You can access the pause Pizza Chefu with the button '&'.",
+            text: "You can access the pause Pizza Chef with the button '&'.",
           },
           {
             type: "textMessage",
@@ -406,7 +407,7 @@ window.overworldMaps.streetLower = {
           { type: "textMessage", text: "Yooo, listen a minute." },
           {
             type: "textMessage",
-            text: "You can go in the Pause Pizza Chefu with the button '&'.",
+            text: "You can go in the Pause Pizza Chef with the button '&'.",
           },
           {
             type: "textMessage",
@@ -427,7 +428,7 @@ window.overworldMaps.streetLower = {
           { type: "textMessage", text: "Yooo, listen a minute." },
           {
             type: "textMessage",
-            text: "You can go in the Pause Pizza Chefu with the button '&'.",
+            text: "You can go in the Pause Pizza Chef with the button '&'.",
           },
           {
             type: "textMessage",
