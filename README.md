@@ -14,6 +14,31 @@ f: to interact
 
 ![tableType](https://user-images.githubusercontent.com/107883257/224707008-0f85ea6b-8b8a-4ee7-a37c-420c8ba48d8d.png)
 
-# In developpement
 
-I am currently developing the home screen of the game as well as the tutorial for the controls with its visuals.
+# Scope of functionalities
+
+## Done ✅
+
+- Turn-based battle system 
+	- Handle types
+- To handle level and statistics progression of pizza
+- Pause Menu
+	- To be able to save progression with pause Menu
+	- To see Statistics of our pizza!!!!
+	- To change team leader of our team
+- Handle npcs 
+	- Loop of mouvement
+	- Dialog 
+	- Cutscene
+- Build a Shop
+	- To create a money System
+- To handle Collisions
+- To create Playable Character
+	- To handle movement
+	- Inventory
+	- Pizza Team
+
+## In Progress 🛠️
+
+- Build an Home screen
+- Add Tutorial With visuals
