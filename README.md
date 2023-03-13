@@ -10,7 +10,7 @@ f: to interact
 
 ## Types 
 
-
+![tableType](https://user-images.githubusercontent.com/107883257/224651106-1c5c9088-cc2a-449b-ac58-0089bc4dc095.png)
 
 # Tech
 
