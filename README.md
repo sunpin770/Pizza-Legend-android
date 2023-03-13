@@ -12,7 +12,7 @@ f: to interact
 
 ## Types 
 
-![tableType](https://user-images.githubusercontent.com/107883257/224661826-e8824d34-6046-4f5d-a6ea-62d2f37e1ec7.png)
+![tableType](https://user-images.githubusercontent.com/107883257/224707008-0f85ea6b-8b8a-4ee7-a37c-420c8ba48d8d.png)
 
 # In developpement
 
