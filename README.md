@@ -4,6 +4,9 @@ It's a game similar to Pokémon but with pizzas. There are four areas in which y
 
 This game was programmed in vanilla Javascript using Object-Oriented Programming and vanilla CSS. This project allowed me to understand the importance of a clean code and helped me to gain a good understanding of how JavaScript works.
 
+You can also access the game through this link: yanis-gerst.github.io/Pizza-Legend/
+It is still in development.
+
 ## Control
 
 z-q-s-d: Moving
