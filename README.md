@@ -7,7 +7,9 @@ This game was programmed in vanilla Javascript using Object-Oriented Programming
 ## Control
 
 z-q-s-d: Moving
+
 &: Pause menu
+
 f: to interact
 
 ## Types 
