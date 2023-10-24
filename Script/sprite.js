@@ -19,9 +19,6 @@ class Sprite {
             this.imageLoaded = true
         }
 
-
-        //Animation & Inital State 
-
         this.animation = config.animation || {
             "stand-down": [ [0,0] ],
             "stand-up": [ [0,2] ],

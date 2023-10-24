@@ -1,0 +1,32 @@
+.control-guide {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+    image-rendering: pixelated;
+    color: #fdfdfd;
+    justify-content: center;
+}
+
+.control-guide__item {
+    display: flex;
+    gap: .5rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item__control img {
+    height: 32px;
+}
+
+.item__control--direction {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1px;
+    column-gap: 1px;
+    place-items: center;
+}
+
+.item__control--direction img:first-child {
+    grid-column: 1 / span 3;
+}
