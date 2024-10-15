@@ -17,6 +17,6 @@ canvas {
   width: 352px;
   height: 198px;
   margin: 0 auto;
-  transform: scale(3) translateY(40%);
+  transform: scale(1) translateY(0%);
   image-rendering: pixelated;
 }/*# sourceMappingURL=style.css.map */
