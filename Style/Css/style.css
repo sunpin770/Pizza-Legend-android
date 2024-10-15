@@ -18,8 +18,8 @@ canvas {
   width: 352px;
   height: 198px;
   margin: 0 auto;
-  -webkit-transform: scale(3) translateY(40%);
-          transform: scale(3) translateY(40%);
+  -webkit-transform: scale(0) translateY(0%);
+          transform: scale(0) translateY(0%);
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: -moz-crisp-edges;
